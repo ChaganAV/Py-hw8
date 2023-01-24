@@ -12,7 +12,7 @@ def Enum(result,digit,oper):
         if result==0:
             result = Calc(oper[i],digit[i],digit[i+1])
         else:
-            result = Calc(oper[i],res,digit[i+1])
+            result = Calc(oper[i],result,digit[i+1])
     return result
 
 def FillList(text,digit,oper):
