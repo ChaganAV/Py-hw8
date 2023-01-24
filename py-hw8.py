@@ -31,6 +31,7 @@ res = 0
 res = f.EnumPrime(res,digit,oper)
 print(f"{text3} = {res}")
 
+# Уровень 4
 text4 = "(12 - 4) * 2 + 5 * 6"
 digit = []
 oper = []
