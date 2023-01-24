@@ -33,6 +33,8 @@ def EnumPrime(result,digit,oper):
             else:
                 digSimp.append(digit[i])
                 opSimp.append(oper[i])
+                if i==len(oper)-1:
+                    digSimp.append(digit[i+1])
 
         else:
             if oper[i] == '*' or oper[i] == '/':
@@ -43,12 +45,10 @@ def EnumPrime(result,digit,oper):
                 result = 0
                 if i==len(oper)-1:
                     digSimp.append(digit[i+1])
-    result=0
-    result = Enum(result,digSimp,opSimp)
-    # for d in digSimp:
-    #     print(d)
-    # for o in opSimp:
-    #     print(o)
+    if len(oper)>1:
+        result=0
+        result = Enum(result,digSimp,opSimp)
+
     return result
 
 
